@@ -17,7 +17,7 @@ namespace whois
         private async void Search_btn_Click(object sender, EventArgs e)
         {
             output.Items.Clear();
-            string api_key = "at_FU1DNxrqrCiKtOOKTGrIJE6GbSeqL";
+            string api_key = "at_FU1DNxrqrCiKtOOKTGrIJE6GbSeqL"; // เปลี่ยน API KEY ตรงนี้
             string domainName = Domain_tb.Text;
             HttpClient request = new HttpClient();
             var content = await request.GetAsync("https://www.whoisxmlapi.com/whoisserver/WhoisService?apiKey=" + api_key + "&domainName=" + domainName + "&outputFormat=JSON");
