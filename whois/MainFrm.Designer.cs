@@ -79,7 +79,7 @@ namespace whois
             this.Controls.Add(this.output);
             this.Controls.Add(this.Domain_tb);
             this.Controls.Add(this.Search_btn);
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "MainFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "whois";
