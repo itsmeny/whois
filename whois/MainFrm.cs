@@ -16,6 +16,7 @@ namespace whois
         }
         private async void Search_btn_Click(object sender, EventArgs e)
         {
+            output.Items.Clear();
             string api_key = "at_FU1DNxrqrCiKtOOKTGrIJE6GbSeqL";
             string domainName = Domain_tb.Text;
             HttpClient request = new HttpClient();
